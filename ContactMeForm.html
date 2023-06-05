@@ -1,0 +1,161 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+<nav class="navbar">
+<div class="navbar-container container">
+<input type="checkbox">
+<div class="hamburger-lines">
+<span class="line line1"></span>
+<span class="line line2"></span>
+<span class="line line3"></span>
+</div>
+<ul class="menu-items">
+   <li><a href="http://141.217.120.86/hi6288/html/inf6420-projects/6420-final/">Home</a></li>
+   <li><a href="http://141.217.120.86/hi6288/html/inf6420-projects/6420-final/profile.html">Profile</a></li>
+   <li><a href="http://141.217.120.86/hi6288/html/inf6420-projects/6420-final/CVResumepage.html">Resume</a></li>
+   <li><a href="http://141.217.120.86/hi6288/html/inf6420-projects/6420-final/IndustrialProjects.html">Industrial Projects</a></li>
+   <li><a href="http://141.217.120.86/hi6288/html/inf6420-projects/6420-final/AcademicProjects.html">Academic Publications</a></li>
+   <li><a href="http://141.217.120.86/hi6288/html/inf6420-projects/6420-final/ContactMeForm.html">Contact me</a></li>
+</ul>
+<h1 class="logo">PW</h1>
+</div>
+
+</nav>
+
+<section class="showcase-area" id="showcase">
+    <div class="showcase-container">
+        <h1 class="main-title" id="home">Contact Me</h1>
+    </div>
+</section>
+
+<section id="about">
+   <div class="about-wrapper container">
+      <div class="about-text">
+         <h1>Contact Information</h1>
+         <article>
+             <div>
+                 <p>Thank you for visiting my site. I would enjoy speaking with you further about my experiences and education to determine if I fit what you are looking for in a potential employee. Please fill out the form below to get in touch with me.</p>
+             </div>
+         </article>
+         &nbsp
+         <form action= "showform.php" method="post">
+         <legend></legend>
+         <fieldset class="todaysdate">
+            <legend>Today's Date</legend>
+            <div class="date-picker">
+               <label for="month">Month
+               </label>
+               <select id="month"
+                       name="month">
+                  <option value="01">January</option>
+                  <option value="02">February</option>
+                  <option value="03">March</option>
+                  <option value="04">April</option>
+                  <option value="05">May</option>
+                  <option value="06">June</option>
+                  <option value="07">July</option>
+                  <option value="08">August</option>
+                  <option value="09">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+               </select>
+               <label for="day">Day
+               </label>
+               <select id="day"
+                       name="day">
+                  <option value="01">1</option>
+                  <option value="02 ">2</option>
+                  <option value="03">3</option>
+                  <option value="04">4</option>
+                  <option value="05">5</option>
+                  <option value="06">6</option>
+                  <option value="07">7</option>
+                  <option value="08">8</option>
+                  <option value="09">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+               </select>
+            </div>
+         </fieldset>
+         <fieldset class="contactinfo">
+            <legend>Contact Information</legend>
+            <label for="nameinput">
+               Name
+               <input type="text" name="name" id="nameinput" placeholder="First and last name">
+            </label>
+            <label for="emailinput">
+               Email
+               <input type="email" name="email" id="emailinput" placeholder="address@example.com">
+            </label>
+            <label for="phoneinput">
+               Phone
+               <input type="tel" name="phone" id="phoneinput" placeholder="301-555-1234"
+         </fieldset>
+         <fieldset class="moreinformation">
+            <legend>Which would you like more information on?</legend>
+            <label for="education">
+               <input type="checkbox" id="education" value="Education" name="animal">
+               Education
+            </label>
+            <label for="experience">
+               <input type="checkbox" id="experience" value="Experience" name="experience">
+               Experience
+            </label>
+            <label for="skills">
+               <input type="checkbox" id="skills" value="Skills" name="skills">
+               Skills
+            </label>
+            <label for="Certifications">
+               <input type="checkbox" id="certifications" value="Certifications" name="certifications">
+               Certifications
+            </label>
+         </fieldset>
+         </fieldset>
+         <fieldset class="feedback">
+            <legend>Feedback</legend>
+            <label for ="feedback">
+               Please use this space to leave any feedback, comments, or questions you have.
+               <textarea name="feedback" id="feedback"  rows="4" cols="55">
+               </textarea>
+            </label>
+         </fieldset>
+         <fieldset class="submitbutton">
+            <input type="submit" id="submit" value="Submit">
+         </fieldset>
+      </form>
+      </div>
+   </div>
+</section>
+<footer id="footer">
+<h2><i>Hasan, Kathleen & Andrew &copy; all rights reserved</i></h2>
+</footer>
+</body>
+</html>

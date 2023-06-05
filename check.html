@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+
+        <link rel="stylesheet" type="text/css" href="desktop.css">
+
+    <script>
+        function toggleNavbar() {
+            var navbar = document.querySelector(".navbar");
+            navbar.classList.toggle("responsive");
+            var navLinks = navbar.querySelectorAll("a");
+            for (var i = 0; i < navLinks.length; i++) {
+                if (navLinks[i].style.display === "block") {
+                    navLinks[i].style.display = "none";
+                } else {
+                    navLinks[i].style.display = "block";
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="navbar">
+    <a class="active" href="#home">Home</a>
+    <a href="#background">Background</a>
+    <a href="#cv">CV</a>
+    <a href="#publications">Academic Publications</a>
+    <a href="#projects">Industrial Projects</a>
+    <a href="#contact">Contact Me</a>
+    <span class="hamburger" onclick="toggleNavbar()">&#9776;</span>
+</div>
+
+<div class="content">
+    <h1>About Me</h1>
+    <p>
+        Welcome to my personal website! I'm [Your Name], and I have a passion for [Your Interests or Field of Study]. On this site, you can learn more about my background, view my CV, and explore my academic publications and industrial projects. Please feel free to contact me if you have any questions or would like to connect.
+    </p>
+</div>
+</body>
+
+</html>
